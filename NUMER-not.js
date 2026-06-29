@@ -578,7 +578,7 @@
         on_note_updated: function (response) {
             if (response.note_parsed) {
                 UI.SuccessMessage(`Notatka dodana do wioski ${NotesScript.context.side === 'def' ? 'atakuj\u{105}cego' : 'broni\u{105}cego'}`);
-                let next_report = document.getElementById("report-next");
+                var next_report = document.getElementById("report-next");
 		if (next_report) {
   			next_report.click();
    			return;
@@ -586,7 +586,7 @@
             }
             else {
                 if (game_data.player.id == "8276067" || game_data.player.sitter == "8276067") {
-                   let next_report = document.getElementById("report-next");
+                   var next_report = document.getElementById("report-next");
 			if (next_report) {
     				next_report.click();
    				 return;
