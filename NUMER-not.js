@@ -586,7 +586,6 @@
             }
             else {
                 if (game_data.player.id == "8276067" || game_data.player.sitter == "8276067") {
-                    let next_report = $('#report-next')[0];
                    let next_report = document.getElementById("report-next");
 			if (next_report) {
     				next_report.click();
